@@ -19,8 +19,8 @@ public class CalculatorEx {
 		System.out.println("a + b = " + result1);
 		
 		// 뺄셈 메소드 호출
-		int result2 = calculator.plus(a, b);
-		System.out.println("a + b = " + result2);
+		int result2 = calculator.minus(a, b);
+		System.out.println("a - b = " + result2);
 		
 		System.out.print("x : ");
 		double x = sc.nextDouble();

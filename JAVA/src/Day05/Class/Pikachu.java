@@ -30,7 +30,7 @@ public class Pikachu {
 	}
 	
 	// 매개변수가 있는 생성자
-//	public Pikachu(int enetgy, String type) {
+//	public Pikachu(int energy, String type) {
 //		System.out.println("매개변수가 있는 생성자가 실행됨...");
 //	}
 	// 메소드 오버로딩
