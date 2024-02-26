@@ -14,7 +14,7 @@ public class StreamReduce {
 		list.add(70);
 		
 		// list의 stream 객체 생성 reduce 연산
-		// reduce( 초깃값, (누적값, 현재 요소) -> 수식 ) * su누적되는 값에 요소를 하나 하나 더한다.
+		// reduce( 초깃값, (누적값, 현재 요소) -> 수식 ) * 누적되는 값에 요소를 하나 하나 더한다.
 		// : 모든 스트림 요소를 하나의 값으로 누적해서 줄이는 연산
 		int result = list.stream()
 						 .reduce(0, (sum, a) -> sum + a);
