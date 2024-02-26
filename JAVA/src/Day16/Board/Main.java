@@ -12,8 +12,8 @@ import Day16.Board.Service.BoardServiceImpl;
 public class Main {
 	
 	// 필요한 객체 생성
-	static List<Board> boardList = null;	// 게시글 목록
-	static Scanner sc = new Scanner(System.in);
+	static List<Board> boardList = null;		// 게시글 목록
+	static Scanner sc = new Scanner(System.in);	// 입력 객체
 	
 	// 비지니스 로직 계층의 객체 생성 
 	static BoardService boardService = new BoardServiceImpl();
