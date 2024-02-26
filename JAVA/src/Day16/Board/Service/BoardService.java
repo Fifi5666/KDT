@@ -13,7 +13,7 @@ import Day16.Board.DTO.Board;
  * - 게시글 수정
  * - 게시글 삭제
  */
-public interface BoardService {
+public interface BoardService {	// 인터페이스의 목적은? 재사용
 	// 게시글 목록
 	List<Board> list();
 	 
