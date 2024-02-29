@@ -4,37 +4,28 @@ import java.util.Scanner;
 
 public class 선택정렬2 {
 	public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int[] arr = new int[5];
-        int n = arr.length;
+        boolean one = false;
+        boolean ten = false;
 
-//        System.out.println("정렬전" + Arrays.toString(arr));
-        System.out.print("숫자 입력 : ");
+        for (int i = 1; i < 99; i++) {
+            int a = i % 10;
+            int b = i / 10;
 
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = sc.nextInt();
-            for(int j =0; j<i;j++){
-                if(arr[i] == arr[j]) {
-                    System.out.println( arr[j]+"은 숫자가 중복 됩니다. 중복되지않는 다른 숫자를 입력해주세요.");
-                    i -- ;
-                    break;
-        }
+            one = a == 3 || a == 6 || a == 9;
+            ten = b == 3 || b == 6 || b == 9;
+            
+            if (one && ten) {
+                System.out.println("**\t");
+            } else if (one) {    
+                System.out.println("*");
+            } else if (ten) {
+                System.out.println("*");
+            } else {
+                System.out.println(i + "\t");
+            }
+            if (i % 10 ==0) {
+                System.out.println(i);
             }
         }
-
-        for (int i = 0; i < n - 1; i++) {//한자리는 남겨둔다
-            int min = i;// 최소값 저장
-            for (int j = i + 1; j < n; j++) {
-                if (arr[j] < arr[min])
-                    min = j;
-            }
-            int temp = arr[min];
-            arr[min] = arr[i];
-            arr[i] = temp;
-      }    
-        for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + " ");
-        }
-	}
-
+    }
 }
