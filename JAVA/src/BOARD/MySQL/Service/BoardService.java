@@ -1,4 +1,4 @@
-package Day16.Board.Service;
+package BOARD.MySQL.Service;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package Day16.Board;
+package BOARD.MySQL;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
